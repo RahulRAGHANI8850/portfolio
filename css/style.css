@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --main-color: #0ef;
+    --text-color: #fff;
+    --background-color: #1f242d;
+    --second-background-color: #323946;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.headings {
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* header starts here */
+#header {
+    box-shadow: .1rem .2rem 1rem black;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+/* navigation */
+nav {
+    padding: 1rem;
+}
+
+.navbar-default {
+    background-color: var(--background-color) !important;
+    border: none;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--text-color) !important;
+    transition: all .5s ease-in .0s;
+}
+
+.navbar-brand:hover {
+    text-shadow: .1rem .1rem 1rem var(--main-color);
+    color: var(--main-color) !important;
+}
+
+.navbar-default .navbar-nav a {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: var(--text-color) !important;
+    transition: all .3s ease-in-out 0s;
+}
+
+.navbar-default {
+    background-color: var(--second-background-color) !important;
+}
+
+.navbar-default .navbar-nav a:hover {
+    background-color: none !important;
+    color: var(--main-color) !important;
+    text-shadow: .3rem .3rem 1rem var(--main-color);
+}
+
+/* navigation ends here */
+/* header ends here*/
+
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* home section starts here */
+.home-content span {
+    color: var(--main-color);
+}
+
+.home-btns {
+    width: 230px;
+    margin: 10% 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-btns .hier-me,
+.home-btns .download-cv,
+#download-cv {
+    font-weight: 900;
+    color: var(--main-color);
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: .1rem solid var(--main-color);
+    background-color: none;
+    text-decoration: none;
+    transition: all .4s ease-in 200ms;
+}
+
+.hier-me:hover,
+.download-cv:hover,
+#download-cv:hover {
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: .2rem .5rem .8rem var(--main-color);
+}
+
+/* 
+.home-image {
+    background-color: var(--second-background-color);
+    border-radius: 10%;
+    width: 45%;
+    scale: 1;
+}
+
+.home-image img {
+    width: 50%;
+    animation: floatImage 3s ease-in-out infinite alternate;
+} */
+
+/* home sec ends here */
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* about sec */
+.about {
+    background-color: var(--second-background-color);
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 75%;
+    transition: all .6s ease-in 100ms;
+}
+
+.about-image img:hover {
+    box-shadow: .4rem .4rem 1rem var(--main-color);
+}
+
+/* about sec ends here */
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+/*  services starts here*/
+.services {
+    margin: 0 auto;
+    width: 60%;
+    padding: 3rem;
+    text-align: center;
+    border: .2rem solid var(--main-color);
+    margin-top: 5rem;
+    transition: all .5s ease-in 100ms;
+}
+
+.services h2 {
+    font-size: 2rem;
+}
+
+.services span {
+    font-size: 3rem;
+}
+
+.services:hover {
+    cursor: pointer;
+    box-shadow: .4rem .4rem 2.3rem var(--main-color);
+}
+
+/* services ends here */
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+/* Skills sec starts here */
+.skills {
+    background-color: var(--second-background-color);
+}
+
+.progress-bar {
+    background-color: var(--main-color) !important;
+    width: 100%;
+}
+
+.progress span {
+    color: var(--background-color);
+    font-weight: 700;
+}
+
+.progress:hover {
+    box-shadow: .2rem .2rem .5rem var(--main-color);
+}
+
+/* skills sec ends here */
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* projects starts here */
+.projects {
+    margin: 0 auto;
+    width: 80%;
+    height: 330px;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: all .4s linear 100ms;
+}
+
+.projects:hover {
+    box-shadow: .4rem .4rem 3rem var(--main-color);
+}
+
+.projects img {
+    width: 100%;
+}
+
+.projects a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.projects a:hover {
+    color: var(--text-color);
+}
+
+/* projects sec ends here */
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* hire me section */
+#hire-me {
+    padding: 4rem;
+}
+
+.btn-default {
+    background-color: transparent;
+    border: .2rem solid var(--main-color);
+    color: var(--main-color);
+    width: 120px;
+    font-size: 1.5rem;
+    border-radius: none;
+    font-weight: 600;
+    margin-top: 2.5rem;
+}
+
+.pd {
+    padding: 3rem;
+}
+
+#border {
+    border: .2rem solid var(--main-color);
+}
+
+.btn-default:hover {
+    border: .2rem solid var(--main-color);
+    background-color: transparent !important;
+    box-shadow: .3rem .3rem 1rem var(--main-color);
+    color: #fff;
+}
+
+/* hire me erds  */
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* contact sec starts here */
+.contact-sec {
+    background-color: var(--second-background-color);
+}
+
+.contact-sec .contact-content {
+    text-align: center;
+}
+
+.contact-form {
+    padding: 0rem 5rem;
+}
+
+.contact-form h3 {
+    color: var(--main-color);
+}
+
+.input-fileds {
+    padding: 2rem 12rem;
+}
+
+.input-fileds input {
+    margin: .5rem 0rem;
+    padding: .5rem;
+    width: 100%;
+    border: .2rem solid var(--main-color);
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 400;
+    transition: all linear 500ms;
+}
+
+.input-fileds input:hover {
+    background-color: #0ef;
+    box-shadow: .3rem .3rem .5rem var(--text-color);
+}
+
+#submit {
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+#submit:hover {
+    color: var(--text-color);
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* multi selectors */
+
+.contact-sec,
+.blogs-sec,
+.projects-sec,
+.skills,
+.services-sec,
+.about,
+.home {
+    padding: 8rem 0rem;
+}
+
+.home-content,
+.about-content,
+.services-content,
+.skill-content,
+.projects-content,
+.blogs-content,
+.contact-content {
+    padding: 4rem;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.about-content p,
+.services-content p,
+.skill-content p,
+.projects-content p,
+.blogs-content p,
+.contact-content p {
+    line-height: 3.8rem;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 30px 0px;
+}
+
+.about-content h1,
+.services-content h1,
+.skill-content h1,
+.projects-content h1,
+.blogs-content h1,
+.contact-content h1 {
+    font-size: 3rem;
+}
+
+.about-content h3,
+.services-content h3,
+.skill-content h3,
+.projects-content h3,
+.blogs-content h3,
+.contact-content h3 {
+    font-weight: 500;
+    color: var(--main-color);
+    font-size: 2.4rem;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* footer starts here */
+.footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer h4 {
+    color: var(--text-color);
+    font-weight: 100;
+}
+
+.upBtn button {
+    background-color: var(--background-color);
+    width: 20%;
+    padding: 4rem;
+    border-radius: 100%;
+}
+
+.upBtn a button span {
+    font-size: 5rem;
+    color: var(--text-color);
+}
+
+.social-icons a {
+    display: inline-flex;
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    color: var(--main-color);
+    background: transparent;
+    padding: 1rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    margin: 1rem 1.5rem 3rem 0rem;
+    transition: all .4s linear 200ms;
+    text-decoration: none;
+
+}
+
+.social-icons a:hover {
+    font-weight: 900;
+    box-shadow: .4rem .4rem 1.5rem var(--main-color);
+
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* break points */
+@media(max-width: 1000px) {
+    html {
+        font-size: 70%;
+    }
+
+    /* home sec starts here */
+    .home-image {
+        height: 50%;
+    }
+
+    .home-image img {
+        width: 90%;
+    }
+
+    /* home sec ends here */
+
+
+    /* services */
+    .services {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    /* services ends */
+
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* break point 2 */
+@media (max-width: 767px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    .home {
+        padding: 0 2rem 10rem 2rem;
+    }
+
+    /* home sec starts here */
+    .home-image {
+        display: none;
+    }
+
+    /* home sec ends here */
+
+    .about-image {
+        position: static;
+    }
+
+    .about-image img {
+        padding: 2rem;
+        padding-bottom: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .contact-sec,
+    .blogs-sec,
+    .projects-sec,
+    .skills,
+    .services-sec,
+    .about,
+    .home {
+        padding:0rem 2rem 8rem 2rem;
+    }
+
+
+    .home-content,
+    .about-content,
+    .services-content,
+    .skill-content,
+    .projects-content,
+    .blogs-content,
+    .contact-content {
+        padding: 1.5rem;
+    }
+
+    /* carousel
+    #mycarousel {
+        padding: 2.5rem;
+        width: 80%;
+    }
+
+    #mycarousel img {
+        width: 100%;
+        margin-bottom: 1rem;
+    } */
+
+    .projects {
+        height: 330px !important;
+    }
+
+
+    /* contact form */
+    .contact-form .input-fileds {
+        padding: 2rem;
+    }
+
+    .input-fileds input {
+        padding: 1rem;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    #submit {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+
+    .home {
+        padding: 1rem 2rem 4rem 2rem;
+    }
+
+}
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+/* animations */
+@keyframes floatImage {
+    0% {
+        transform: translate(0rem);
+    }
+
+    50% {
+        transform: translateX(15rem);
+    }
+
+    100% {
+        transform: translateX(-2rem);
+    }
+}

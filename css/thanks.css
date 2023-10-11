@@ -1,0 +1,41 @@
+body
+{
+    background-image: url(../images/thanks_page.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.msg
+{
+    width: 50%;
+    max-width: 1000px;
+    background-color: black;
+    opacity: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    box-shadow:.2rem .2rem 1rem red;
+}
+
+.msg h1
+{
+    font-weight: 900;
+}
+.msg button
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: .5rem;
+    width: 80px;
+    background-color: silver;
+    border-radius: 20%;
+}
+
+.msg button a
+{
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
